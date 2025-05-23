@@ -1,0 +1,431 @@
+{
+    "product-info" : [
+    {
+        "id" : 0,
+        "product_name" : "Tomato",
+        "category" : "Vegetables",
+        "price" : 50,
+        "quantity" : 100,
+        "weight" : 500,
+        "image": "assets/images/Tomato.png",
+        "splcat" : "fresh",
+        "discount": 170
+    },
+    {
+        "id" : 1,
+        "product_name" : "Carrot",
+        "category" : "Vegetables",
+        "price" : 45,
+        "quantity" : 80,
+        "weight" : 500,
+        "splcat" : "Organic",
+        "image": "assets/images/carrot.png",
+        "discount": 170
+    },
+    {
+        "id" : 2,
+        "product_name" : "Beet Root",
+        "category" : "Vegetables",
+        "price" : 35,
+        "quantity" : 120,
+        "weight" : 500,
+        "splcat" : "Traditional",
+        "image": "assets/images/beetroot.png",
+        "discount": 170
+    },
+    {
+        "id" : 3,
+        "product_name" : "Onion",
+        "category" : "Vegetables",
+        "price" : 60,
+        "quantity" : 0,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "image": "assets/images/Onion.png",
+        "discount": 170
+    },{
+        "id" : 4,
+        "product_name" : "Green Chilli",
+        "category" : "Vegetables",
+        "price" : 100,
+        "quantity" : 50,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "Traditional",
+        "image": "assets/images/GreenChillies.png"
+    },{
+        "id" : 5,
+        "product_name" : "Califlower",
+        "category" : "Vegetables",
+        "price" : 80,
+        "quantity" : 100,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "Organic",
+        "image": "assets/images/Califlower.png"
+    },{
+        "id" : 6,
+        "product_name" : "Ladies Finger",
+        "category" : "Vegetables",
+        "price" : 120,
+        "quantity" : 0,
+        "weight" : 500,
+        "splcat" : "Organic",
+        "discount": 170,
+        "image": "assets/images/ladyfinger.png"
+    },
+    {
+        "id" : 7,
+        "product_name" : "Ridge Gourd",
+        "category" : "Vegetables",
+        "price" : 80,
+        "quantity" : 12,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "fresh",
+        "image": "assets/images/Ridge_Gourd.png"
+    },
+    {
+        "id" : 8,
+        "product_name" : "Potato",
+        "category" : "Vegetables",
+        "price" : 50,
+        "quantity" : 6,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "Traditional",
+        "image": "assets/images/Potato.png"
+    },
+    {
+        "id" : 9,
+        "product_name" : "Apple",
+        "category" : "Fruits",
+        "price" : 40,
+        "quantity" : 10,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "traditional",
+        "image": "assets/images/apples.png"
+    },
+    {
+        "id" : 10,
+        "product_name" : "Banana",
+        "category" : "Fruits",
+        "price" : 35,
+        "quantity" : 15,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "Traditional",
+        "image": "assets/images/banana.png"
+    },
+    {
+        "id" : 11,
+        "product_name" : "Orange",
+        "category" : "Fruits",
+        "price" : 100,
+        "quantity" : 5,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "discount": 170,
+        "image": "assets/images/orange.png"
+    },
+    {
+        "id" : 12,
+        "product_name" : "Papaya",
+        "category" : "Fruits",
+        "price" : 60,
+        "quantity" : 12,
+        "weight" : 500,
+        "splcat" : "Traditional",
+        "discount": 170,
+        "image": "assets/images/Papaya.png"
+    },
+    {
+        "id" : 13,
+        "product_name" : "Guava",
+        "category" : "Fruits",
+        "price" : 70,
+        "discount": 170,
+        "quantity" : 8,
+        "weight" : 500,
+        "splcat" : "Traditional",
+        "image": "assets/images/Guava.png"
+    },
+    {
+        "id" : 14,
+        "product_name" : "Pineapple",
+        "category" : "Fruits",
+        "price" : 80,
+        "quantity" : 10,
+        "discount": 170,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "image": "assets/images/Pineapple.png"
+    },
+    {
+        "id" : 15,
+        "product_name" : "Watermelon",
+        "category" : "Fruits",
+        "price" : 90,
+        "quantity" : 15,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "discount": 170,
+        "image": "assets/images/Watermelon.png"
+    },
+    {
+        "id" : 16,
+        "product_name" : "Blueberries",
+        "category" : "Fruits",
+        "price" : 100,
+        "quantity" : 20,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "discount": 170,
+        "image": "assets/images/Blueberries.png"
+    },
+    {
+        "id" : 17,
+        "product_name" : "Coriander",
+        "category" : "Leafy",
+        "price" : 15,
+        "quantity" : 12,
+        "weight" :100,
+        "splcat" : "fresh",
+        "discount": 170,
+        "image": "assets/images/coriander.png"
+    },{
+        "id" : 18,
+        "product_name" : "Palak",
+        "category" : "Leafy",
+        "discount": 170,
+        "price" : 19,
+        "splcat" : "orTraditional",
+        "quantity" : 5,
+        "weight" : 100,
+        "image": "assets/images/Palak.png"
+    },{
+        "id" : 19,
+        "product_name" : "Gongura Leaves",
+        "category" : "Leafy",
+        "discount": 170,
+        "price" : 10,
+        "quantity" : 15,   
+        "splcat" : "fresh",
+        "weight" : 100,
+        "image": "assets/images/Gongura.png"
+    },{
+        "id" : 20,
+        "product_name" : "Methi",
+        "category" : "Leafy",
+        "discount": 170,
+        "price" : 25,
+        "splcat" : "Traditional",
+        "quantity" : 8,
+        "weight" : 100,
+        "image": "assets/images/Methi.png"
+    },{
+        "id" : 21,
+        "product_name" : "Mint",
+        "category" : "Leafy",
+        "price" : 18,
+        "quantity" : 10,
+        "splcat" : "orTraditional",
+        "weight" : 100,
+        "discount": 170,
+        "image": "assets/images/Mint.png"
+    },{
+        
+        "id" : 22,
+        "product_name" : "Curry Leaves",
+        "category" : "Leafy",
+        "price" : 20,
+        "quantity" : 12,
+        "splcat" : "Traditional",
+        "weight" : 100,
+        "discount": 170,
+        "image": "assets/images/CurryLeaves.png"
+    },{
+        "id" : 23,
+        "product_name" : "Chukkakura",
+        "category" : "Leafy",
+        "price" : 22,
+        "quantity" : 5,
+        "discount": 170,
+        "splcat" : "fresh",
+        "weight" : 100,
+        "image": "assets/images/chukkakura.png"
+    },{
+        "id" : 24,
+        "product_name" : "Leafy Lettuce",
+        "category" : "Leafy",
+        "price" : 15,
+        "quantity" : 10,
+        "discount": 170,
+        "splcat" : "orTraditional",
+        "weight" : 100,
+        "image": "assets/images/lettuce.png"
+    },{
+        "id" : 25,
+        "product_name" : "Green Amaranthus",
+        "category" : "Leafy",
+        "price" : 17,
+        "quantity" : 8,
+        "weight" : 100,
+        "discount": 170,
+        "splcat" : "fresh",
+        "image": "assets/images/Artboard.png"
+    },{
+        "id" : 26,
+        "product_name" : "Moong Dal",
+        "category" : "Grains",
+        "price" : 200,
+        "discount": 170,
+        "quantity" : 120,
+        "splcat" : "fresh",
+        "weight" : 500,
+        "image": "assets/images/Yellowmoong.png"
+    },{
+        "id" : 27,
+        "product_name" : "Red Rice",
+        "category" : "Grains",
+        "price" : 150,
+        "discount": 170,
+        "quantity" : 5,
+        "weight" : 500,
+        "splcat" : "Traditional",
+        "image": "assets/images/red_rice.png"
+    },{
+        "id" : 28,
+        "product_name" : "Red Rajma",
+        "category" : "Grains",
+        "price" : 180,
+        "splcat" : "fresh",
+        "discount": 170,
+        "quantity" : 10,
+        "weight" : 500,
+        "image": "assets/images/Red_Rajma.png"
+    },{
+        "id" : 29,
+        "product_name" : "Multi Grain Flour",
+        "category" : "Grains",
+        "price" : 120,
+        "quantity" : 8,
+        "splcat" : "Organic",
+        "discount": 170,
+        "weight" : 500,
+        "image": "assets/images/Multigrain_Flour.png"
+    },{
+        "id" : 30,
+        "product_name" : "Whole Jaggery",
+        "category" : "Grains",
+        "price" : 10,
+        "discount": 170,
+        "quantity" : 150,
+        "weight" : 500,
+        "splcat" : "Traditional",
+        "image": "assets/images/Whole_Jaggery.png"
+    },{
+        "id" : 31,
+        "product_name" : "Red Masoor Dal",
+        "category" : "Grains",
+        "price" : 8,
+        "discount": 170,
+        "quantity" : 20,
+        "splcat" : "fresh",
+        "weight" : 500,
+        "image": "assets/images/Red_Masoor_Dal.png"
+    },{
+        "id" : 32,
+        "product_name" : "Jaggery Powder",
+        "category" : "Grains",
+        "discount": 170,
+        "price" : 15,
+        "quantity" : 120,
+        "splcat" : "Traditional",
+        "weight" : 500,
+        "image": "assets/images/Jaggery_Powder.png"
+    },{
+        "id" : 33,
+        "product_name" : "Chilli Powder",
+        "category" : "Spices",
+        "price" : 100,
+        "quantity" : 10,
+        "discount": 170,
+        "weight" : 500,
+        "splcat" : "fresh",
+        "image": "assets/images/Chilli_Powder.png"
+    },
+    {
+        "id" : 34,
+        "product_name" : "Cinnamon Sticks",
+        "category" : "Spices",
+        "price" : 120,
+        "splcat" : "traditional",
+        "quantity" : 20,
+        "weight" : 500,
+        "discount": 170,
+        "image": "assets/images/Cinnamon.png"
+    },{
+        "id" : 35,
+        "product_name" : "Coriander Seeds",
+        "category" : "Spices",
+        "price" : 80,
+        "quantity" : 100,
+        "discount": 170,
+        "splcat" : "fresh",
+        "weight" : 500,
+        "image": "assets/images/Coriander_Seeds.png"
+    },{
+        "id" : 36,
+        "product_name" : "Cumin Seeds",
+        "category" : "Spices",
+        "price" : 150,
+        "quantity" : 50,
+        "weight" : 500,
+        "discount": 170,
+        "splcat" : "fresh",
+        "image": "assets/images/Cumin_seed.png"
+    },{
+        "id" : 37,
+        "product_name" : "Dry Red Chilli",
+        "category" : "Spices",
+        "price" : 70,
+        "splcat" : "traditional",
+        "quantity" : 120,
+        "weight" : 500,
+        "discount": 170,
+        "image": "assets/images/dry_red_chilli.png"
+    },{
+        "id" : 38,
+        "product_name" : "Elachi",
+        "category" : "Spices",
+        "price" : 10,
+        "quantity" : 0,
+        "discount": 170,
+        "splcat" : "Organic",
+        "weight" : 500,
+        "image": "assets/images/Elachi.png"
+    },{
+        "id" : 39,
+        "product_name" : "Star Amise",
+        "category" : "Spices",
+        "price" : 120,
+        "splcat" : "Organic",
+        "quantity" : 200,
+        "discount": 170,
+        "weight" : 500,
+        "image": "assets/images/Star_Anise.png"
+    },{
+        "id" : 40,
+        "product_name" : "Turmeric Powder",
+        "category" : "Spices",
+        "price" : 150,
+        "quantity" : 0,
+        "discount": 170,
+        "weight" : 500,
+        "splcat" : "traditional",
+        "image": "assets/images/Turmeric_Powder.png"
+    }
+]
+}

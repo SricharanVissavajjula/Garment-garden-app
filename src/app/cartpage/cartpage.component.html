@@ -1,0 +1,112 @@
+<div class="cart-page">
+  <div class="cart" *ngIf="cartItems$ | async as cartItems">
+    <h2>Your Cart</h2>
+
+    <div *ngFor="let item of cartItems" class="cart-card">
+      <div>
+        <img class="item-img" [src]="item.image" alt="" />
+      </div>
+      <div class="prod">
+        <p>{{ item.product_name }} x {{ item.count }}</p>
+      </div>
+      <div class="prod-rate">
+        ₹{{ item.price }} x {{ item.count }} = ₹{{ item.price * item.count }}
+      </div>
+      <div class="count-btn">
+        <button class="dec-btn" (click)="this.actions.decrementBtn(item)">-</button>
+        <span class="count">{{ item.count }}</span>
+        <button class="inc-btn" (click)="this.actions.incrementBtn(item)">+</button>
+      </div>
+      <div class="delete-btn">
+        <button class="del-btn" (click)="removeFromCart(item.id, item.product_name)">
+          <mat-icon> delete </mat-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart total -->
+    <div class="cart-total" *ngIf="cartItems.length > 0">
+      <h3 class="total">Total: ₹{{ totalAmount | number : "1.2-2" }}</h3>
+    </div>
+    <div class="check-out">
+      <button mat-raised-button class="checkout" style="background-color:#6e8a4a; color: white;" (click)="checkedOut()">
+        Checkout
+      </button>
+    </div>
+  </div>
+
+
+  <!-- <div>
+    <button class="checkout" mat-raised-button color="primary" routerLink="/checkout">Check out</button>
+  </div> -->
+
+  <div class="payment">
+    <div class="coupon">
+      <mat-icon class="coupon-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000000"
+        >
+          <path
+            d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"
+          />
+        </svg>
+      </mat-icon>
+      <span class="coupon-text">Coupon</span>
+    </div>
+
+    <div class="wallet">
+      <div>
+        <input type="radio" />
+        <mat-icon class="wallet-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            style="padding-top: 7px;"
+            fill="#000000"
+          >
+            <path
+              d="M240-160q-66 0-113-47T80-320v-320q0-66 47-113t113-47h480q66 0 113 47t47 113v320q0 66-47 113t-113 47H240Zm0-480h480q22 0 42 5t38 16v-21q0-33-23.5-56.5T720-720H240q-33 0-56.5 23.5T160-640v21q18-11 38-16t42-5Zm-74 130 445 108q9 2 18 0t17-8l139-116q-11-15-28-24.5t-37-9.5H240q-26 0-45.5 13.5T166-510Z"
+            />
+          </svg>
+        </mat-icon>
+        <span class="wallet-text">(GG Wallet) <br>
+          <span class="wallet-sub-text">Applicable to a minimum cart value of ₹200.00</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="cost">
+        <p class="cost-total">Total : </p>
+        <p class="cost-price">{{totalAmount | number : "1.2-2" }}</p>
+    </div>
+    <div class="saved">
+        <p class="saved-total"> Savings : </p>
+        <p class="saved-price"> -{{ savedAmount | number : "1.2-2" }}</p>
+    </div>
+
+    <div class="final">
+        <p class="final-total"> GRAND TOTAL : </p>
+        <p class="final-price"> {{ FinalAmount | number : "1.2-2" }}</p>
+    </div>
+    <div class="payment-mode">
+      <p class="select-payment">Select Payment Mode:</p>
+      <mat-radio-group aria-label="Select an option" >
+        <mat-radio-button class="razor" value="1">Online Payment <b>Powered By RazorPay</b></mat-radio-button>
+        <mat-radio-button class="payu" value="2"> Online Payment <b>Powered By PayU</b></mat-radio-button>
+        <mat-radio-button class="cod" value="2">Cash On Delivery*</mat-radio-button>
+      </mat-radio-group>
+      <p class="na">* Not applicable for pre-orders and early morning delivery slots!</p>
+  </div>
+    
+  </div>
+
+  
+</div>
+
+

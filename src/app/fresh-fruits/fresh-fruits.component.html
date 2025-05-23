@@ -1,0 +1,52 @@
+<div class="banner">
+  <h1>FRESH FRUITS</h1>
+  <p>
+    Homegrown produce & internationally sourced fresh fruit, all meeting our
+    rigourous safety standards, delivered to your doorstep.
+  </p>
+</div>
+<div class="veg-card">
+  <div class="card" *ngFor="let product of filteredProducts$ |  async"> 
+    <div>
+      <img
+        [ngClass]="{ 'black-img': product.quantity === 0 }"
+        [src]="product.image"
+        class="veg-image"
+        alt="photo of {{ product.product_name }}"
+      />
+      <div class="card-body">
+        <h2 class="p-name">{{ product.product_name }}</h2>
+        <p style="font-weight: bold; font-size: large;">₹{{ product.price }} <span style="text-decoration: line-through;color: rgb(255, 0, 0); font-size: small;">₹{{product.discount}}</span></p>
+        <p class="weight">{{ product.weight }}g</p>
+        <!-- <span
+          class="stock-alert"
+          *ngIf="product.quantity > 0 && product.quantity < 15"
+        >
+          Only {{ product.quantity }} {{ product.product_name }} are available,
+          please add fast!!
+        </span> -->
+
+        
+        <div class="stock-btns" *ngIf="product.quantity === 0">
+          <button class="sold-out">Sold Out</button>
+          <button (click)="notify()" class="notify-btn">Notify me</button>
+        </div>
+        <div class="bottom" id="bottom-btn" >
+          <button 
+            class="add-cart"
+            *ngIf="!product.addedToCart && product.quantity > 0"
+            (click)="this.action.addToCart(product)"
+          >
+            Add to Cart
+          </button>
+
+          <div *ngIf="product.addedToCart">
+            <button class="dec-btn" (click)="this.action.decrementBtn(product)">-</button>
+            <span class="count">{{ product.count }}</span>
+            <button class="inc-btn" (click)="this.action.incrementBtn(product)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
